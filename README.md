@@ -1,5 +1,5 @@
 # Street View House Numbers Number Recognition
-
+Download Dataset :- https://www.kaggle.com/datasets/stanfordu/street-view-house-numbers
 ## Overview
 
 This repository hosts a project for number recognition in street view house numbers. The primary goal of this project is to build and train a deep learning model capable of identifying digits in street view images.
