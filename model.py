@@ -50,7 +50,8 @@ def get_model():
     ])
 
     return model
-
+  
+#callbacks
 def callback():
     reduce_lr_callback = tf.keras.callbacks.ReduceLROnPlateau(
     monitor='val_loss',
@@ -58,7 +59,7 @@ def callback():
     patience=3,
     verbose=0,)
     return reduce_lr_callback
-
+#metrics
 def metrics():
     metrics = [CategoricalAccuracy(name = "accuracy"), TopKCategoricalAccuracy(k=2, name = "top_k_accuracy")]
     return metrics
