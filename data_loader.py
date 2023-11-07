@@ -193,7 +193,7 @@ agumenter_layer = tf.keras.Sequential([
 def process_data(image , labels):
     return agumenter_layer(image , training = True) , labels
 
-# preprocessing train and validation dataset 
+# preprocessing train and val dataset 
 def train_val_dataset(train_mat_path= train_mat_path , train_mg_path= train_img_path):  
     batch_size = 32
     train_dataset , val_dataset  = to_train_val_dataset(train_mat_path , train_mg_path)
